@@ -1,0 +1,39 @@
+baseURL = "http://regis.doseextra.com/"
+languageCode = "pt-br"
+title = "Regis Tomkiel"
+theme = "hugo-theme-sarah"
+
+[permalinks]
+fixed = ":title/"
+blog  = ":slug"
+
+[params]
+author = "Regis Tomkiel"
+keywords = ["Desenvolvedor Web", "Podcaster", "Entusiasta de Software Livre"]
+avatar = "https://avatars2.githubusercontent.com/u/15989303?s=400&u=9eb0f3fdfa13bc817d392cecd23966f4ec51fea2&v=4"
+dateform = "Jan 2, 2006"
+lang = "pt"
+footertext = "Escrito por Régis Tomkiel"
+googleAnalytics = "rr"
+about = "AAAA"
+
+[params.social]
+linkedin      = "regis-tomkiel"
+twitter       = "tomtomkiel"
+github        = "rtomkiel"
+
+[[params.info]]
+label = "Address"
+value = "Bento Gonçalves, RS, Brasil"
+
+[[params.projects]]
+name = "Vim Bootstrap"
+desc = "A generator which provides a simple method of generating a .vimrc configuration for vim"
+img = "img/vimbootstrap.png"
+link = "https://vim-bootstrap.com/"
+
+[[params.projects]]
+name = "Awesome Go"
+desc = "A curated list of awesome Go frameworks, libraries and software"
+img = "img/awesomego.png"
+link = "https://awesome-go.com/"
