@@ -6,6 +6,7 @@ theme = "hugo-theme-sarah"
 [permalinks]
 fixed = ":title/"
 blog  = ":slug"
+paginas = "/:filename"
 
 [params]
 author = "Regis Tomkiel"
@@ -15,7 +16,7 @@ dateform = "Jan 2, 2006"
 lang = "pt"
 footertext = "Escrito por Régis Tomkiel"
 googleAnalytics = "rr"
-about = "AAAA"
+about = "Desenvolvedor Web e administrador de sistemas unix-like (*bsd e GNU/Linux). Skills interessantes em PHP, Shell Script, Go, Wordpress*, Hugo e SEO."
 
 [params.social]
 linkedin      = "regis-tomkiel"
@@ -26,14 +27,26 @@ github        = "rtomkiel"
 label = "Address"
 value = "Bento Gonçalves, RS, Brasil"
 
-[[params.projects]]
-name = "Vim Bootstrap"
-desc = "A generator which provides a simple method of generating a .vimrc configuration for vim"
-img = "img/vimbootstrap.png"
-link = "https://vim-bootstrap.com/"
+[[menu.main]]
+  name = "Home"
+  identifier = "home"
+  weight = 1
+  url = "/"
 
-[[params.projects]]
-name = "Awesome Go"
-desc = "A curated list of awesome Go frameworks, libraries and software"
-img = "img/awesomego.png"
-link = "https://awesome-go.com/"
+[[menu.main]]
+  name = "Páginas"
+  identifier = "paginas"
+  weight = 2
+  url = "/paginas/"
+
+[[menu.main]]
+  name = "Artigos"
+  identifier = "artigos"
+  weight = 3
+  url = "/artigos/"
+
+[[menu.main]]
+  name = "Podcasts"
+  identifier = "podcasts"
+  weight = 4
+  url = "/podcasts/"
